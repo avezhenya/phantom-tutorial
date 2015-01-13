@@ -2,3 +2,4 @@
 *.pyc
 anychart.min.js
 .DS_Store
+screen/

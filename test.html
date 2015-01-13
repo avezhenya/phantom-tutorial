@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta name="x-cat-tags" content="Insert your code here"/>
+    <script src="anychart.min.js"></script>
+    <style>
+        #container {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000000;
+        }
+        #status{
+            display: none;
+        }
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="container"></div>
+</body>
+<script>
+    anychart.onDocumentLoad(function() {
+        var chart = anychart.lineChart([1,3,4]);
+        chart.container('container');
+        chart.draw();
+    });
+</script>
+</html>
